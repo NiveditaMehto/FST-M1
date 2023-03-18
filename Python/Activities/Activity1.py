@@ -1,18 +1,7 @@
-import pytest
-import math
+name=input("Enter your name:")
+age=int(input("Enter your age"))
 
-def test_sqrt():
-    num = 25
-    assert math.sqrt(num) == 5
+print(type(age))
 
-def testsquare():
-    num = 7
-    assert num*num == 40
-
-def testquality():
-    assert 10 == 11
-
-def test_age():
-    age = 20
-    year = str((2021-age)+100)
-    assert year == 2101
+Year=str((2023-age)+100)
+print(name + "hundred years age will be" + Year )
