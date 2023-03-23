@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="53a4d835-93ab-49df-a370-acf11d3120ac" created="3.44.1" activeEnvironment="Default environment" name="GithubProject_FST" projectVersion="" updated="3.44.1 2023-03-15T15:35:59Z" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="53a4d835-93ab-49df-a370-acf11d3120ac" created="3.44.1" activeEnvironment="Default environment" name="GithubProject_FST" projectVersion="" updated="3.44.1 2023-03-15T15:35:59Z" encryptionMode="Not encrypted" xmlns:con="http://eviware.com/soapui/config">
   <con:settings/>
   <con:interface xsi:type="con:RestService" id="b9bf4738-501e-4757-8bbc-857528d27823" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://petstore.swagger.io" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <con:settings/>
@@ -187,7 +187,10 @@
         <con:request name="Request 1" id="8b7287b1-a4bf-4ea3-bffa-51389e4d6c46" mediaType="application/json">
           <con:settings/>
           <con:endpoint>https://api.github.com</con:endpoint>
-          <con:credentials/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
           <con:parameters/>
         </con:request>
       </con:method>
@@ -217,7 +220,10 @@
         <con:request name="Request 1" id="354a55ba-e4bc-484a-be0f-5cf0527afa95" mediaType="application/json">
           <con:settings/>
           <con:endpoint>https://api.github.com</con:endpoint>
-          <con:credentials/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
           <con:parameters/>
         </con:request>
       </con:method>
@@ -254,7 +260,10 @@
         <con:request name="Request 1" id="d5ed16ad-d90d-4930-8acb-e3ff6f9edc49" mediaType="application/json">
           <con:settings/>
           <con:endpoint>https://api.github.com</con:endpoint>
-          <con:credentials/>
+          <con:credentials>
+            <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
           <con:parameters>
             <con:entry key="keyId" value="keyId"/>
           </con:parameters>
@@ -316,11 +325,10 @@
    "key": "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINlfAkVUOA30Fign7mIfnsUx3Vahe/HG0Z/jy1aNYRRH"
 }</con:request>
             <con:originalUri>https://api.github.com/user/keys</con:originalUri>
-            <con:assertion type="Simple Contains" id="1ec97103-d138-43bb-a825-5aeb51f01674" name="Contains">
+            <con:assertion type="Valid HTTP Status Codes" id="76ce297b-53be-40da-baa3-06aaf2ba370e" name="Valid HTTP Status Codes">
+              <con:settings/>
               <con:configuration>
-                <token>Validation Failed</token>
-                <ignoreCase>false</ignoreCase>
-                <useRegEx>false</useRegEx>
+                <codes>201</codes>
               </con:configuration>
             </con:assertion>
             <con:credentials>
@@ -358,11 +366,10 @@
             <con:endpoint>https://api.github.com</con:endpoint>
             <con:request/>
             <con:originalUri>https://api.github.com/user/keyskeyId</con:originalUri>
-            <con:assertion type="Simple Contains" id="95f9e8f1-4799-455c-975a-2e926b2f9b89" name="Contains">
+            <con:assertion type="Valid HTTP Status Codes" id="d8fbe00a-dc1a-4c69-a998-d342e00a2cef" name="Valid HTTP Status Codes">
+              <con:settings/>
               <con:configuration>
-                <token>Not Found</token>
-                <ignoreCase>false</ignoreCase>
-                <useRegEx>false</useRegEx>
+                <codes>204</codes>
               </con:configuration>
             </con:assertion>
             <con:credentials>
@@ -394,7 +401,6 @@
       <con:type>OAuth 2.0</con:type>
       <con:accessToken>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</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStatus>ENTERED_MANUALLY</con:accessTokenStatus>
       <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
       <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
@@ -458,7 +464,6 @@
       <con:type>OAuth 2.0</con:type>
       <con:accessToken>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</con:accessToken>
       <con:accessTokenPosition>HEADER</con:accessTokenPosition>
-      <con:accessTokenStatus>ENTERED_MANUALLY</con:accessTokenStatus>
       <con:accessTokenStartingStatus>ENTERED_MANUALLY</con:accessTokenStartingStatus>
       <con:oAuth2Flow>AUTHORIZATION_CODE_GRANT</con:oAuth2Flow>
       <con:refreshAccessTokenMethod>AUTOMATIC</con:refreshAccessTokenMethod>
